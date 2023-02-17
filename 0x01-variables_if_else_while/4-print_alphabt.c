@@ -11,9 +11,9 @@
 int main(void)
 {
 int lowercase;
-q = 'q';
-e = 'e';
-for (lowercase = 'a'; lowercase <= 'z' lowercase++)
+int q = 'q';
+int e = 'e';
+for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
 {
 if (lowercase != 'q' && lowercase != 'e')
 putchar(lowercase);
