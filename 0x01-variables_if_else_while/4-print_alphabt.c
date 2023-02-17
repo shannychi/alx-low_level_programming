@@ -10,8 +10,8 @@
 
 int main(void)
 {
-char lowercase,e,q;
-q = 'q'
+char lowercase, e, q;
+q = 'q';
 e = 'e';
 for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
 {
