@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - Entry point
  *
@@ -6,10 +8,9 @@
  */
 int main(void)
 {
-int lowercase
-clrscr();
-for (lowercase= ‘a’; lowercase<= ‘z’; lowercase++)
+int lowercase;
+for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
 putchar(lowercase);
-putchar (‘\n’);
-getch();
+putchar('\n')
+return (0);
 }
