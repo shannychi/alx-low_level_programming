@@ -1,3 +1,4 @@
+root@5b63e2ff94b2:/alx-low_level_programming/0x01-variables_if_else_while# cat 100-print_comb3.c
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -11,11 +12,11 @@
 int main(void)
 {
 int i, j;
-for (i = '0'; i < '8'; i++)
+for (i = '0'; i < '9'; i++)
 {
 for (j = i + 1; j < '9'; j++)
 {
-if (i != j)
+if (j != i)
 {
 putchar(i);
 putchar(j);
