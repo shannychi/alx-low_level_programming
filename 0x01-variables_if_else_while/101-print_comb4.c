@@ -20,7 +20,7 @@ for (d = j + 1; d < 10; d++)
 putchar((i % 10) + '0');
 putchar((j % 10) + '0');
 putchar((d % 10) + '0');
-if(i == 7 && j == 8 && d == 9)
+if (i == 7 && j == 8 && d == 9)
 continue;
 putchar(',');
 putchar(' ');
