@@ -1,3 +1,5 @@
+ines (24 sloc)  324 Bytes
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -10,13 +12,15 @@
 
 int main(void)
 {
-int i;
-for (i = 0; i < 100; i++)
+int i, j;
+for (i = 0; i < 9; i++)
 {
-putchar((i / 10) + '0');
+for (j = i + 1; j < 10; j++)
+{
 putchar((i % 10) + '0');
-if(i != 99)
-{
+putchar((j % 10) + '0');
+if (i == 8 && j == 9)
+continue;
 putchar(',');
 putchar(' ');
 }
