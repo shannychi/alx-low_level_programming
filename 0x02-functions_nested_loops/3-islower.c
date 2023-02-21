@@ -1,8 +1,7 @@
-julien@ubuntu:~/0x02$ cat 3-main.c 
 #include "main.h"
 
 /**
- * main - check the code.
+ * int _islower - a function that checks for lowcase
  *
  * Return: Always 0.
  */
