@@ -13,10 +13,10 @@ for (times = 0; times <= 9; times++)
 _putchar('0');
 _putchar(',');
 _putchar(' ');
-for (table = 1; table <=9; table++)
+for (table = 1; table <= 9; table++)
 {
 d = (times * table);
-if ((d / 10) < 0)
+if ((d / 10) > 0)
 {
 _putchar((d / 10) + '0');
 }
