@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
+ * print_last_digit - a function that prints the last digit of a number
+ *@num: letter single input
  * Return: Always 0.
  */
 int  print_last_digit(int num)
@@ -16,4 +16,3 @@ lastdigit = (-1 * lastdigit);
 _putchar(lastdigit + '0');
 return (lastdigit);
 }
-
