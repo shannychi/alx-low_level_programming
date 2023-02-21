@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ * _abs - a function that computes the absolute value of an integer
+ *@x: single letter input
  * Return: Always 0.
  */
 int _abs(int x)
