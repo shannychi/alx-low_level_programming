@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 /**
  * main - check the code
  *
@@ -6,23 +7,14 @@
  */
 int main(void)
 {
-long int n;
-n = 612852475143;
-long int d = 2, prime = 0, max;
-while(n != 0)
+int i;
+long n = 612852475143;
+for (i = (int) sqrt(n); i > 2; i++)
 {
-if (n % d != 0)
-d = d + 1;
-else
+if (n % i == 0)
 {
-max = n;
-n = n / d;
-if (n == 1)
-{
-printf("%d\n", max);
-prime = 1;
+printf("%d\n", i);
 break;
-}
 }
 }
 return (0);
