@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - check the code
- *
+ * print_number - a function that prints an integer
+ *@n: input
  * Return: Always 0.
  */
 void print_number(int n)
