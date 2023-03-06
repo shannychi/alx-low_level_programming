@@ -3,8 +3,8 @@
 /**
  * char *_memcpy - a function that copies memory area.
  *@dest: address
- *src: address
- *n:size of the memory to print
+ *@src: address
+ *@n:size of the memory to print
  * Return: Always 0.
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
