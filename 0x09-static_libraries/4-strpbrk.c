@@ -4,7 +4,13 @@
 #include <ctype.h>
 #include <string.h>
 
+/**
+ * _strpbrk - check code
+ * @s: input
+ * @accept: input
+ * Return:  Always 0 (success)
+ */
 char *_strpbrk(char *s, char *accept)
 {
-    return strpbrk(s, accept);
+return (strpbrk(s, accept));
 }
