@@ -9,7 +9,7 @@
  * @s: memory
  * @b: input
  * @n: input
- * Return Always 0 (success)
+ * Return: Always 0 (success)
  */
 char *_memset(char *s, char b, unsigned int n)
 {
