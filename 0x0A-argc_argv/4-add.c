@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "main.h"
 /**
  * main - Entry Point
@@ -9,21 +10,32 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int i;
+	unsigned int k, sum = 0;
+	char *e;
 
-	if (argc < 1)
-		return (0);
-
+	if (argc > 1)
+{
 	for (i = 1; i < argc; i++)
+{
+		e = argv[i];
+	for (k = 0; k < strlen(e); k++)
+{
+	if (e[k] < 48 || e[k] > 57)
 	{
-		if (!atoi(argv[i]))
-		{
-			printf("%s\n", "Error");
-			return (1);
-		}
-		sum += atoi(argv[i]);
+	printf("Error\n");
+	return (1);
 	}
-	printf("%d\n", sum);
-
-	return (0);
 }
+sum += atoi(e);
+e++;
+}
+printf("%d\n", sum);
+}
+else
+{
+printf("0\n");
+}
+return (0);
+}
+
