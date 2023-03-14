@@ -5,7 +5,7 @@
  * **alloc_grid - function to allocate a grid
  * @width: int type
  * @height: int type
- * Return: Always 0 (success)
+ * Return: pointer to 2 dim. array
  */
 int **alloc_grid(int width, int height)
 {
@@ -25,7 +25,7 @@ int **alloc_grid(int width, int height)
 	for (x = 0; x < height; x++)
 	{
 		pt[x] = malloc(width * sizeof(int));
-		if (pt == NULL)
+		if (pt[x] == NULL)
 		{
 			free(pt);
 			return (NULL);
