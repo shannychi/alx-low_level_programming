@@ -24,6 +24,7 @@ for (len = 0; s1[len] != '\0'; len++)
 	;
 for (len1 = 0; s2[len1] != '\0'; len1++)
 	;
+
 if (sign >= len1)
 {
 	sign = len1;
@@ -43,6 +44,6 @@ for (c1 = 0; c1 < sign; c1++)
 {
 	ptr[c++] = s2[c1];
 }
-ptr = '\0';
+ptr[c++] = '\0';
 return (ptr);
 }
