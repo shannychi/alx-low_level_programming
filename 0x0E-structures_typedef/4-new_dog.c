@@ -1,14 +1,15 @@
-#include <stdlib.h>
+ #include <stdlib.h>
 #include <stdio.h>
 #include "dog.h"
-int get_len(i);
+int get_len(int i);
 char *str_cpy(char *dest, char *src);
 /**
- * new_dog - function that creates a new dog
+ * new_dog - a function that creates a new dog
+ * get len of name + owner, malloc them, cpy name + owner to new
  * @name: name
  * @age: age
  * @owner: owner
- * Return: Always 0 (success)
+ * Return: 0
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -18,19 +19,20 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	new_name = malloc(sizeof(dog_t));
 	if (name == NULL)
-	{
 		return (NULL);
-	}
 	if (name == NULL || age <= 0 || owner == NULL)
 	{
 		free(new_name);
 		return (NULL);
 	}
+
 	for (x = 0; name[x] != '\0'; x++)
-		len_name++;
+		name_len++;
+
 	for (x = 0; owner[x] != '\0'; x++)
-		len_owner++;
-copy_name = malloc(sizeof(char) * (name_len + 1));
+		owner_len++;
+
+	copy_name = malloc(sizeof(char) * (name_len + 1));
 	if (copy_name == NULL)
 		return (NULL);
 
