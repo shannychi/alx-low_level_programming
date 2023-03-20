@@ -30,7 +30,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		len_name++;
 	for (x = 0; owner[x] != '\0'; x++)
 		len_owner++;
-	py_name = malloc(sizeof(char) * (name_len + 1));
+copy_name = malloc(sizeof(char) * (name_len + 1));
 	if (copy_name == NULL)
 		return (NULL);
 
